@@ -85,8 +85,8 @@ int main (int argc, char *argv[]) {
         //If the player isn't found
          if(d == r_value::USERNAME_FOUND){
 
-        dpp::message msg(cmd.command.channel_id, "Username \"" + param + "\" is valid");
-          bot.log(dpp::loglevel::ll_info, output);
+        dpp::message msg(cmd.command.channel_id, "Player \"" + param + "\" exists");
+          bot.log(dpp::loglevel::ll_info, "player exists");
           cmd.reply(msg);
         }
 
